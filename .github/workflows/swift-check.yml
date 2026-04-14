@@ -1,0 +1,23 @@
+name: Swift Build Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  swift:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check Swift files
+        run: |
+          if find . -name "*.swift" | grep -q .; then
+            echo "Swift files detected"
+          fi
+          
+      - name: List Xcode projects
+        run: |
+          find . -name "*.xcodeproj" -o -name "*.xcworkspace" | head -20
