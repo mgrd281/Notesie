@@ -1,0 +1,24 @@
+* text=auto
+
+# Source code
+*.swift text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Xcode project files
+*.pbxproj text merge=union
+*.xcodeproj/** -text
+*.xcworkspace/** -text
+
+# iOS binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.app binary
+*.framework/** binary
+*.xcassets/** binary
