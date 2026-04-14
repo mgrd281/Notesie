@@ -2,6 +2,11 @@
 
 A beautiful, simple, and fast note-taking app for iOS built with React Native and Expo. Designed with premium aesthetics and production-ready code.
 
+**🎯 Quick Start**
+- **Open in Xcode:** [Download & Open in Xcode](#open-in-xcode-native-ios-development)
+- **Run in Simulator:** `npm install && npm start && press i`
+- **Full docs:** [START_HERE.md](START_HERE.md)
+
 ## Features
 
 ✨ **Core Features**
@@ -112,22 +117,36 @@ Notesie/
 
 ### Open in Xcode (Native iOS Development)
 
-Notesie includes native iOS project files for direct Xcode integration. Open the project directly in Xcode:
+**🎯 Open Directly in Xcode with one click:**
 
-**Option 1: From Command Line**
-```bash
-open ios/Notesie.xcworkspace
+```
+xcode://clone?repo=https://github.com/mgrd281/Notesie.git&clonePath=~/Notesie
 ```
 
-**Option 2: GitHub**
-Click the green **Code** button on this repository → **Open with Xcode**
+Or from GitHub: Click **Code** → **Open with Xcode** ↖️
 
-**Option 3: Manual**
-- Navigate to `ios/` folder
-- Double-click `Notesie.xcworkspace` (NOT `.xcodeproj`)
+---
+
+Notesie includes native iOS project files for direct Xcode integration.
+
+**Option 1: From Command Line** (Recommended)
+```bash
+cd /Users/m/Desktop/Notesie
+open ios/Notesie.xcworkspace
+```
+> If `ios/Notesie.xcworkspace` doesn't exist, run: `cd ios && pod install`
+
+**Option 2: Open .xcodeproj directly**
+```bash
+open ios/Notesie.xcodeproj
+```
+
+**Option 3: Manual Navigation**
+- Open Finder → Navigate to `ios/` folder
+- Double-click `Notesie.xcworkspace` (recommended) or `Notesie.xcodeproj`
 - Xcode opens with full native iOS project
 
-> ⚠️ Important: Always open `.xcworkspace` (not `.xcodeproj`) to ensure CocoaPods dependencies are properly loaded.
+> ⚠️ **Important:** Always open `.xcworkspace` to ensure CocoaPods dependencies are properly loaded. Opening `.xcodeproj` directly may cause build errors.
 
 ## Development Workflow
 
