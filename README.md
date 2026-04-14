@@ -110,6 +110,25 @@ Notesie/
    npm run android
    ```
 
+### Open in Xcode (Native iOS Development)
+
+Notesie includes native iOS project files for direct Xcode integration. Open the project directly in Xcode:
+
+**Option 1: From Command Line**
+```bash
+open ios/Notesie.xcworkspace
+```
+
+**Option 2: GitHub**
+Click the green **Code** button on this repository → **Open with Xcode**
+
+**Option 3: Manual**
+- Navigate to `ios/` folder
+- Double-click `Notesie.xcworkspace` (NOT `.xcodeproj`)
+- Xcode opens with full native iOS project
+
+> ⚠️ Important: Always open `.xcworkspace` (not `.xcodeproj`) to ensure CocoaPods dependencies are properly loaded.
+
 ## Development Workflow
 
 ### Hot Reload
