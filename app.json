@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Notesie",
+    "slug": "notesie",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFBF5"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.notesie.app",
+      "build": {
+        "number": "1"
+      },
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "We don't use Face ID",
+        "UIRequiredDeviceCapabilities": [
+          "touch"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFBF5"
+      },
+      "package": "com.notesie.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "backgroundColor": "#FFFBF5"
+    },
+    "description": "Notesie is a beautiful, fast, and simple note-taking app. Create, organize, and manage your thoughts with a premium iOS experience."
+  }
+}
