@@ -1,0 +1,4 @@
+# workspace user settings
+xcuserdata/
+*.xcworkspace/xcuserdata
+*.xcworkspace/xcshareddata/UserInterfaceState.xcuserstate
